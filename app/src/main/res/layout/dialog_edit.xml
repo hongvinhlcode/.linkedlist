@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:padding="10dp"
+    android:background="@drawable/custom_background">
+
+    <TextView
+        android:id="@+id/txtTitleEdit"
+        android:textColor="#00FFFF"
+        android:textStyle="italic"
+        android:textSize="26sp"
+        android:gravity="center"
+        android:text="Edit Node"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/txtTitleEdit"
+        android:id="@+id/edtContentEdit"
+        android:textSize="26sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:background="@drawable/custom_todo"
+        android:layout_below="@+id/edtContentEdit"
+        android:id="@+id/btnClickAddEdit"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="20dp"
+        android:text="Confirm"
+        android:layout_width="85dp"
+        android:layout_height="35dp"/>
+    <Button
+        android:id="@+id/btnClickCancelEdit"
+        android:background="@drawable/custom_todo"
+        android:text="Cancel"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/btnClickAddEdit"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/edtContentEdit"
+        android:layout_width="80dp"
+        android:layout_height="35dp"/>
+</RelativeLayout>
